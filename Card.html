@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(53, 46, 46);
+    }
+
+    body::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: mediumorchid;
+        clip-path: circle(30% at right 70%);
+    }
+
+    body::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: mediumpurple;
+        clip-path: circle(20% at 10% 10%);
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+
+    .card {
+        position: relative;
+        width: 280px;
+        height: 500px;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .card:hover .content{
+        transform: translateY(100px);
+        opacity: 1;
+    }
+
+    h2 {
+        position: absolute;
+        top: -50px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(255, 255, 255, 0.05);
+        pointer-events: none;
+    }
+
+    h3 {
+        font-size: 1.8em;
+        color: white;
+        z-index: 1;
+    }
+
+    p {
+        font-size: 1em;
+        color: white;
+        font-weight: 200;
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: white;
+        color: black;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis aperiam sequi itaque
+                    debitis
+                    reprehenderit est deleniti error dolor, velit, facilis magni accusamus! Neque adipisci facere in
+                    debitis, quasi repudiandae.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis aperiam sequi itaque
+                    debitis
+                    reprehenderit est deleniti error dolor, velit, facilis magni accusamus! Neque adipisci facere in
+                    debitis, quasi repudiandae.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Third</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis aperiam sequi itaque
+                    debitis
+                    reprehenderit est deleniti error dolor, velit, facilis magni accusamus! Neque adipisci facere in
+                    debitis, quasi repudiandae.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>04</h2>
+                <h3>Card Fourth</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis aperiam sequi itaque
+                    debitis
+                    reprehenderit est deleniti error dolor, velit, facilis magni accusamus! Neque adipisci facere in
+                    debitis, quasi repudiandae.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>
